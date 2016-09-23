@@ -11,7 +11,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ route('cliente.index') }}">
                     {{ config('app.name', 'App Cliente') }}
                 </a>
             </div>
