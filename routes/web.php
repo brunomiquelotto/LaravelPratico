@@ -10,11 +10,15 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
+Route::get('/home', function(){
+	return view('welcome');
+});
+
 Route::get('/cliente', ['uses'=>'ClienteController@index', 'as' => 'cliente.index']);
+
