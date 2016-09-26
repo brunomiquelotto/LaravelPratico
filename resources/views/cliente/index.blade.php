@@ -5,11 +5,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Lista de Clientes</div>
-
+                <ol class="breadcrumb panel-heading">
+                    <li class="active">Clientes</li>
+                </ol>
                 <div class="panel-body">
                     <p>
-                        <a href="#" class="btn btn-info">Adicionar</a>
+                        <a href="{{ route('cliente.adicionar') }}" class="btn btn-info">Adicionar</a>
                     </p>
                     <table class="table table-condensed table-stripped table-bordered table-hover">
                         <thead>
@@ -30,8 +31,8 @@
                                 <td>{{ $cliente->email }}</td>
                                 <td>{{ $cliente->endereco }}</td>
                                 <td>
-                                    <a class="btn btn-xs btn-default" href="#">#</a>
-                                    <a class="btn btn-xs btn-danger" href="#">#</a>
+                                    <a class="btn btn-xs btn-default" href="#">Editar</a>
+                                    <a class="btn btn-xs btn-danger" href="#">Excluir</a>
                                 </td>
                             </tr>
                         @endforeach
