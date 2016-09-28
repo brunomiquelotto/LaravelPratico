@@ -32,7 +32,7 @@
                                 <td>{{ $cliente->endereco }}</td>
                                 <td>
                                     <a class="btn btn-xs btn-default" href="{{ route('cliente.editar', $cliente->id) }}">Editar</a>
-                                    <a class="btn btn-xs btn-danger" href="#">Excluir</a>
+                                    <a class="btn btn-xs btn-danger" href="javascript:(confirm('Apagar cliente?') ? window.location.href='{{route('cliente.deletar', $cliente->id)}}' : false)">Excluir</a>
                                 </td>
                             </tr>
                         @endforeach
