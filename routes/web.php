@@ -30,3 +30,4 @@ Route::get('/cliente/deletar/{id}', ['uses'=>'ClienteController@deletar', 'as' =
 Route::post('/cliente/salvar', ['uses'=>'ClienteController@salvar', 'as' => 'cliente.salvar']);
 Route::put('/cliente/atualizar/id{id}', ['uses'=>'ClienteController@atualizar', 'as' => 'cliente.atualizar']);
 
+Route::get('/cliente/detalhe/{id}', ['uses' => 'ClienteController@detalhe', 'as' => 'cliente.detalhe']);
