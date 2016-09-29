@@ -31,3 +31,6 @@ Route::post('/cliente/salvar', ['uses'=>'ClienteController@salvar', 'as' => 'cli
 Route::put('/cliente/atualizar/id{id}', ['uses'=>'ClienteController@atualizar', 'as' => 'cliente.atualizar']);
 
 Route::get('/cliente/detalhe/{id}', ['uses' => 'ClienteController@detalhe', 'as' => 'cliente.detalhe']);
+
+Route::get('/telefone/adicionar/{id}', ['uses' => 'TelefoneController@adicionar', 'as' => 'telefone.adicionar']);
+Route::post('/telefone/salvar/{id}', ['uses' => 'TelefoneController@salvar', 'as' => 'telefone.salvar']);

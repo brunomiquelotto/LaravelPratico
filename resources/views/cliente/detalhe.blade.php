@@ -37,7 +37,7 @@
                         </tbody>
                     </table>
                     <p>
-                        <a class="btn btn-info" href="#">Novo telefone <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-info" href="{{ route('telefone.adicionar', $cliente->id) }}">Novo telefone <span class="glyphicon glyphicon-plus"></span></a>
                     </p>
                 </div>
             </div>
