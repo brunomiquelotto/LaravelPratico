@@ -30,7 +30,7 @@ class ClienteController extends Controller
     	return view('cliente.adicionar');
     }
 
-    public function salvar(Request $request)
+    public function salvar(\App\Http\Requests\ClienteRequest $request)
     {
         \App\Cliente::create($request->all());
         \Session::flash("flash_message", [
